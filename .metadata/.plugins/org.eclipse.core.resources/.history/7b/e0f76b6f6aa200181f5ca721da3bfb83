@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/utnSimilUML/src-gen" creationIcons="false" editDirectory="/utnSimilUML.edit/src-gen"
+    editorDirectory="/utnSimilUML.editor/src-gen" modelPluginID="utnSimilUML" modelName="UtnSimilUML"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>utnSimilUML.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="UtnSimilUML" disposableProviderFactory="true" ecorePackage="utnSimilUML.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="utnSimilUML.ecore#//Visibilidad">
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//Visibilidad/public"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//Visibilidad/private"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//Visibilidad/protected"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//Visibilidad/package"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="utnSimilUML.ecore#//TipoPrimitivo">
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//TipoPrimitivo/String"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//TipoPrimitivo/int"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//TipoPrimitivo/float"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//TipoPrimitivo/double"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="utnSimilUML.ecore#//TipoRetorno">
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//TipoRetorno/void"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//TipoRetorno/String"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//TipoRetorno/int"/>
+      <genEnumLiterals ecoreEnumLiteral="utnSimilUML.ecore#//TipoRetorno/float"/>
+    </genEnums>
+    <genClasses ecoreClass="utnSimilUML.ecore#//Clase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute utnSimilUML.ecore#//Clase/nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="utnSimilUML.ecore#//Atributo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute utnSimilUML.ecore#//Atributo/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute utnSimilUML.ecore#//Atributo/visibilidad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute utnSimilUML.ecore#//Atributo/tipo"/>
+    </genClasses>
+    <genClasses ecoreClass="utnSimilUML.ecore#//Operacion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute utnSimilUML.ecore#//Operacion/visibilidad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute utnSimilUML.ecore#//Operacion/tipoRetorno"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute utnSimilUML.ecore#//Operacion/nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="utnSimilUML.ecore#//Parametros"/>
+  </genPackages>
+</genmodel:GenModel>

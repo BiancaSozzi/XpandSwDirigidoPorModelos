@@ -1,0 +1,49 @@
+«IMPORT utnSimilUML»
+
+«EXTENSION template::GeneratorExtensions»
+
+«DEFINE main FOR DiagramaClases»
+«EXPAND javaClass FOREACH clases_del_Diagrama»
+«ENDDEFINE»
+
+«DEFINE javaClass FOR Clase»
+«FILE "modelo/" +this.nombre + ".java"»
+package modelo;
+
+public class «this.nombre»{
+	«EXPAND atributosClase FOREACH atributos_clases»
+	//Constructor Vacio
+	public «this.nombre»(){
+	}
+	
+	//Constructor Sobrecargado
+	«IF !this.atributos_Clase.isEmpty»
+		public «this.nombre»(«EXPAND fabricarConstructores FOREACH atributos_clases
+		SEPARATOR ","»){
+			«EXPAND asignoAtributos FOREACH atributos_clases»
+		}
+	«ENDIF»
+	
+	//Getter and setter
+	«EXPAND getter_setter_Atributo FOREACH atributos_clases»
+}
+
+«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE atributosClase FOR Atributo»
+	«this.visibilidad» «this.tipo» «this.nombre»;
+«ENDDEFINE»
+
+«DEFINE getter_setter_Atributo FOR Atributo»
+	public void set«this.nombre.toFirstUpper()»(«this.tipo» «this.nombre»){
+		this.«this.nombre» = «this.nombre»;
+	}
+	
+	public «this.tipo» get«this.nombre.toFirstUpper()»(){
+		return «this.nombre»;
+	}
+«ENDDEFINE»
+
+«DEFINE fabricarConstructores FOR Atributo»
+«ENDDEFINE»

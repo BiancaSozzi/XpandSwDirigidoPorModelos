@@ -1,0 +1,6 @@
+«IMPORT utnSimilUML»
+
+«EXTENSION template::GeneratorExtensions»
+
+«DEFINE main FOR DiagramaClases»
+«EXPAND javaClass FOREACH clases_del_Diagrama»

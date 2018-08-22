@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utnSimilUML:DiagramaClases
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:utnSimilUML="http://www.example.org/utnSimilUML"
+    xsi:schemaLocation="http://www.example.org/utnSimilUML utnSimilUML.ecore">
+  <clases_del_Diagrama
+      nombre="Persona">
+    <atributos_clases
+        nombre="apellido"
+        visibilidad="private"
+        tipo="String"/>
+    <atributos_clases
+        nombre="nombre"
+        visibilidad="private"
+        tipo="String"/>
+    <atributos_clases
+        nombre="edad"
+        visibilidad="private"/>
+  </clases_del_Diagrama>
+</utnSimilUML:DiagramaClases>

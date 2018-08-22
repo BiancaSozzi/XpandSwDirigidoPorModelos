@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utnSimilUML:DiagramaClases
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:utnSimilUML="http://www.example.org/utnSimilUML"
+    xsi:schemaLocation="http://www.example.org/utnSimilUML utnSimilUML.ecore">
+  <clases_del_Diagrama
+      nombre="Persona">
+    <operaciones_clases
+        nombre="jugar">
+      <parametros_contenidos
+          nombre="zapatillas"/>
+      <parametros_contenidos
+          nombre="saltar"/>
+    </operaciones_clases>
+    <operaciones_clases
+        nombre="comer"/>
+    <operaciones_clases
+        nombre="dormir">
+      <parametros_contenidos
+          nombre="horas"/>
+    </operaciones_clases>
+    <atributos_clases
+        nombre="apellido"
+        tipo="String"/>
+    <atributos_clases
+        nombre="edad"/>
+  </clases_del_Diagrama>
+</utnSimilUML:DiagramaClases>

@@ -1,0 +1,7 @@
+import utnSimilUML;
+
+/*Model model(Type this) :
+	eContainer;
+	
+List[Entity] entities(Model this) :
+	types.typeSelect(Entity);*/

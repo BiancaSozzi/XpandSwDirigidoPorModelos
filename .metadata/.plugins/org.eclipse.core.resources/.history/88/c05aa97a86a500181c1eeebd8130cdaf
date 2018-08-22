@@ -1,0 +1,23 @@
+«IMPORT utnSimilUML»
+
+«EXTENSION template::GeneratorExtensions»
+
+«DEFINE main FOR DiagramaClases»
+«EXPAND javaClass FOREACH clases_del_Diagrama»
+«ENDDEFINE»
+
+«DEFINE javaClass FOR Clase»
+«FILE "modelo/" +this.nombre + ".java"»
+package modelo;
+
+public class «this.nombre»{
+	«EXPAND atributosClase FOREACH atributos_clases»
+	
+}
+
+«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE atributosClase FOR Atributo»
+	«this.visibilidad» «this.tipo» «this.nombre»;
+«ENDDEFINE»

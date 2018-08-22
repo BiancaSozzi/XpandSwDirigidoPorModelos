@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;utnSimilUML.ecore&apos; to &apos;agosto1.generator.project/src/metamodel&apos;&#x0D;&#x0A;- Original project: &apos;utnSimilUML&apos;&#x0D;&#x0A;- Destination element: &apos;agosto1.generator.project/src/metamodel&apos;&#x0D;&#x0A;- Original element: &apos;utnSimilUML.ecore&apos;" description="Copy file" destination="=agosto1.generator.project/src&lt;metamodel" element1="model/utnSimilUML.ecore" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1534884293504" units="0" version="1.0"/>
+</session>
